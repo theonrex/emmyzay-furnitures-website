@@ -1,0 +1,25 @@
+@media screen and (max-width: 1000px){
+    .grid-containers {
+            
+            grid-template-columns:  100% !important;
+         
+        }
+        .col50 > .col50{
+            padding: 0;
+        }
+
+                .grid-container{
+                    display: block !important;
+                    padding: 10px;
+                    margin: 0;
+                    width: 90%;
+                }
+                                .item2 img,
+                                .item3 img {
+                                   display: none;
+                                }
+                                .forth-section {
+    background-color: #bcffcf5f;
+    padding-bottom: 0;
+}
+}
