@@ -7,6 +7,10 @@
         .col50 > .col50{
             padding: 0;
         }
+                .green-btn a {
+                    color: white;
+                    font-size: 15px;
+                }
 
                 .grid-container{
                     display: block !important;
@@ -141,8 +145,10 @@
 .Emsocial-links {
     color: rgb(255, 255, 255);
     width: 100%;
-    font-size: 6px;
-    padding: 10px 0px 10px 0px;
+    font-size: 10px;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
     background: rgb(1, 115, 45);
     background: linear-gradient(6deg, rgba(1, 115, 45, 1) 0%, rgba(0, 171, 65, 1) 47%, rgba(0, 170, 65, 1) 100%);
     text-align: right !important;
@@ -198,5 +204,9 @@
 }
 .client img {
     width: 65%;
+}
+.slide-bd {
+    width: 100% !important;
+    margin: auto;
 }
 }

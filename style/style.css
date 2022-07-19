@@ -106,7 +106,7 @@ a.site-logo img{
 }
 
 .site-navbar ul li a {
-    color: #00ab41;
+    color: white;
     padding: 20px;
     display: block;
     text-decoration: none;
@@ -172,31 +172,61 @@ a.site-logo img{
 
 /* mobile breakpoint start */
 @media screen and (max-width: 767px) {
-    .container {
-        max-width: 720px;
-    }
+ 
 
     /* navbar css for mobile start */
     .nav-toggler {
         display: block;
+                
     }
 
     .site-navbar {
         min-height: 60px;
     }
+         .site-navbar .site-logo {
+             
+position: relative;             
+            
+           
+            position: absolute;
+                color: white;
+                max-height: 0;
+                top: 7em;
+                left: 0;
+                transition: .3s;
+         }
+                 .site-navbar {
+                     display: flex;
+                     justify-content: space-between;
+                     align-items: center;
+                     padding: 73px 0;
+                 }
 
+                  .site-navbar .nav-toggler {
+        
+                      position: absolute;
+                      color: white;
+                      max-height: 0;
+                      top:7em;
+                      right: 0;
+                      transition: .3s;
+                  }
     .site-navbar ul {
-        position: absolute;
         width: 100%;
-        height: calc(100vh - 60px);
+        height: 100%;
         left: 0;
-        top: 60px;
+        top: 120px !important;
         flex-direction: column;
         align-items: center;
-        background-color: rgba(255, 255, 255, 0.75);
+        color: white;
         max-height: 0;
         overflow: hidden;
         transition: .3s;
+    }
+        
+         
+    .posi{
+        position: relative;
     }
 
     .site-navbar ul li {
@@ -206,10 +236,12 @@ a.site-logo img{
 
     .site-navbar ul li a {
         padding: 45px;
+        color: #00ab41;
+
     }
 
     .site-navbar ul li a:hover {
-        background-color: rgba(255, 255, 255, .1);
+        background-color: rgba(49, 77, 51, 0.1);
     }
 
     .site-navbar ul.open {
@@ -219,6 +251,16 @@ a.site-logo img{
 
     /* navbar css for mobile end */
 }
+  .site-navbar ul li a {
+ 
+      color: black;
+    
+  }
+   .site-navbar ul li a:hover {
+
+       color: #00ab41;
+
+   }
 
 /* mobile breakpoint end */
 
@@ -848,4 +890,32 @@ padding-top: 72px !important;
   .works h1{
   text-align: center;
   padding-top: 55px;
+}
+
+.scale-up-center {
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 }
