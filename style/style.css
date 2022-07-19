@@ -461,6 +461,10 @@ img {
 .trending{
     font-size: 53px;
 }
+
+.trending br {
+    display: none;
+}
 .trending span{
     color: #00ab41;
 }
@@ -839,7 +843,7 @@ padding-top: 72px !important;
 
 /* works */
 .works {
-  
+  margin-bottom: 44px;
 }
   .works h1{
   text-align: center;
