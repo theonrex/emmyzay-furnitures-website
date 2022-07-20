@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+
 body {
 
     overflow-x: hidden;
@@ -16,14 +19,19 @@ a{
     width: 20%;
 float: left;
 }.col30 {
+   
     width: 30%;
         padding: 20px;
         float: left;
-}.col40 {
+   
+}
+
+.col40 {
     width: 40%;
        
   float: left;
 }.col50 {
+    float: left;
     width: 50%;
 }.col60 {
     width: 60%;
@@ -66,9 +74,13 @@ color: #ffffff;
         font-size: 16px;
   padding: 10px 70px 10px 30px;
 background: rgb(1, 115, 45);
-    background: linear-gradient(6deg, rgba(1, 115, 45, 1) 0%, rgba(0, 171, 65, 1) 47%, rgba(0, 170, 65, 1) 100%); text-align: right !important;
+    text-align: right !important;
 
         
+}
+
+button{
+    border-radius: 5px !important;
 }
 
 .Emsocial-links a:hover {
@@ -111,9 +123,9 @@ a.site-logo img{
     display: block;
     text-decoration: none;
     text-transform: uppercase;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 600 ;
-        font-size: 25px;
+        font-family: 'Open Sans', sans-serif !important;
+                font-weight: 600 ;
+        font-size: 20px;
 }
 
 .site-navbar ul li a:hover {
@@ -386,7 +398,7 @@ img {
 .prev,
 .next {
     cursor: pointer;
-    /* position: absolute; */
+    position: absolute;
     top: 50%;
     width: auto;
     padding: 16px;
@@ -408,18 +420,21 @@ img {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #00ab41;
+}
+a:hover {
+    color:white !important;
 }
 
 /* Caption text */
 .text {
     color: #000000;
     font-size: 15px;
-    padding:142px 72px 77px 72px;
+    padding:119px 72px 47px 72px;
     bottom: 8px;
     width: 100%;
     text-align: center;
-    margin-top: -133px;
+    margin-top: -103px;
    
             border-radius: 12px;
                 background: rgb(1, 115, 45);
@@ -433,8 +448,37 @@ img {
     width: 100%;
     text-align: center;
 }
+.text h3{
+    font-size: 16px;
+    color: #a2ffc6;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.bi-quote::before {
+    content: "\f6b0";
+    color: white;
+    font-size: 22px;
+   
+}
+
+.last.bi-quote:last-child::before {
+    content: "\f6b0";
+    color: white;
+    font-size: 22px;
+    -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+       
+}
+
+.text h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+}
 .client img {
-    width: 25%;
+    position: sticky;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px 1px #070404;
     
 
         
@@ -456,7 +500,7 @@ img {
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: #2e2e2ed8;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -464,7 +508,7 @@ img {
 
 .active,
 .dot:hover {
-    background-color: #717171;
+    background-color: #00ab41;
 }
 
 /* Fading animation */
@@ -495,6 +539,7 @@ img {
 
 /* first section */
 .beautiful{
+            font-family: 'Open Sans', sans-serif !important;
     font-size: 19px;
     color: #00ab41;
     font-style: italic;
@@ -528,8 +573,24 @@ img {
     padding: 12px 33px;
     font-size: 19px;
     color: rgb(0, 0, 0);
-    font-size: 16px;
+  
     font-weight: 500;
+
+
+}
+.white-btn a{
+    background-color: white;
+  text-decoration: none;
+    font-size: 19px;
+    color: rgb(0, 0, 0);
+   
+
+}
+.white-btn a:hover {
+color: #00ab41 !important;  
+  text-decoration: none;
+    font-size: 19px;
+    color: rgb(0, 0, 0);
 
 
 }
@@ -594,17 +655,24 @@ img {
 background: rgb(1, 115, 45);
     background: linear-gradient(6deg, rgba(1, 115, 45, 1) 0%, rgba(0, 171, 65, 1) 47%, rgba(0, 170, 65, 1) 100%);
     display: flex;
+    
 }
 .first-section p{
     color: white;
     font-size: 16px;
     
+
+}
+.first-mg{
+    padding-top: 63px;
+    padding-bottom: 63px;
 }
 
 .first-section .col50 > h1{
     margin-top: 22px;
     font-size: 52px;
 color: rgb(188, 255, 207);
+   
 }
 .green-bg{
     background-color: rgb(255, 255, 255) !important;
@@ -654,16 +722,20 @@ text-align: center;
 #contact {
     background: #F9F9F9;
     padding: 35px;
-    width: 60%;
+    width: 100%;
     margin: auto;
     border-radius: 12px;
    
 }
-.contact-mg{
+
+footer a{
+    color: white;
+}
+/* .contact-mg{
     margin: 90px 0 -90px 0;
         position: relative;
     display: flex;
-}
+} */
 
 #contact h3 {
     color: #00ab41;
@@ -785,6 +857,7 @@ footer p {
 
     .services{
       padding-top: 63px;
+      padding-bottom: 55px;
         position: relative;
         background: rgb(1, 115, 45);
   background: linear-gradient(6deg, rgba(1, 115, 45, 1) 0%, rgba(0, 171, 65, 1) 47%, rgba(0, 170, 65, 1) 100%);
@@ -796,7 +869,17 @@ footer p {
     .services > header {
         text-align: center;
         font-size: 52px;
+        color: white;
     }
+         .services>hr {
+             text-align: center;
+             font-size: 52px !important;
+             height: 52px;
+             opacity: 1;
+             width: 20%;
+             margin: auto;
+             color: white;
+         }
  .services .col50 header {
      text-align: center;
      font-size: 27px;
@@ -872,8 +955,9 @@ footer p {
        .forth-section header{
 color: #00ab41;
 text-align: center;
-font-size: 22px;
+font-size: 28px;
 padding-top: 72px !important;
+        font-family: 'Open Sans', sans-serif !important;
        }
 .forth-section p {
   width: 70%;
@@ -887,9 +971,29 @@ padding-top: 72px !important;
 .works {
   margin-bottom: 44px;
 }
+
+.col30 h3{
+    font-size: 19px;
+    text-transform: capitalize;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    float: left;
+    margin: 13px;
+    box-shadow: 1px 2px 3px 2px #00ab4213;
+}
+
+.col30 h3:hover {
+    color: #00ab41;
+    box-shadow: 1px 2px 3px 3px rgba(0, 0, 0, 0.076);
+}
   .works h1{
   text-align: center;
+  text-transform:uppercase;
   padding-top: 55px;
+  color: #00ab41;
+                color: linear-gradient(6deg, rgba(1, 115, 45, 1) 0%, rgba(0, 171, 65, 1) 47%, rgba(0, 170, 65, 1) 100%);
+  
 }
 
 .scale-up-center {
