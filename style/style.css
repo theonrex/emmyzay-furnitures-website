@@ -18,6 +18,7 @@ a{
 .col20 {
     width: 20%;
 float: left;
+padding: 20px;
 }.col30 {
    
     width: 30%;
@@ -28,6 +29,9 @@ float: left;
 
 .col40 {
     width: 40%;
+    float: left;
+    padding: 20px;
+    margin: auto;
        
   float: left;
 }.col50 {
@@ -45,12 +49,21 @@ float: left;
 }.col90 {
     width: 90%;
 }
+.col100{
+    width: 100%;
+    display: inline-block;
+}
 /* grid */
 .grid-containers {
     display: grid;
     grid-template-columns: 10% 80% !important;
     gap: 10px;
     background-color: transparent !important;
+    padding: 5px;
+}
+
+.grid-containers:hover {
+ 
     padding: 5px;
 }
 .grid-containers h1{
@@ -129,8 +142,10 @@ a.site-logo img{
 }
 
 .site-navbar ul li a:hover {
-    background: rgba(255, 255, 255, .1);
+    color: #00ab41 !important;
 }
+
+
 
 /* navbar regular css end */
 
@@ -386,6 +401,7 @@ img {
 .slide-bd{
     width: 70% !important;
         margin: auto;
+        padding-bottom: 44px;
   }
 .slideshow-container {
     width: 100%;
@@ -399,7 +415,7 @@ img {
 .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 80%;
     width: auto;
     padding: 16px;
     margin-top: -22px;
@@ -478,7 +494,7 @@ a:hover {
     position: sticky;
     width: 150px;
     border-radius: 50%;
-    box-shadow: 1px 1px 1px 1px #070404;
+    box-shadow: 5px 0px 15px 0px #0704042e;
     
 
         
@@ -608,7 +624,7 @@ color: #00ab41 !important;
 
 .green-btn:hover a, .green-btn:hover {
     border: none;
-    font-size: 19px;
+    font-size: 12px;
     animation-name: greenbtn;
     animation-duration: 20s;
     color: rgb(255, 255, 255);
@@ -636,7 +652,7 @@ color: #00ab41 !important;
 .green-btn:hover {
     background-color: #00ab41;
     border: none;
-    padding: 12px 33px;
+ 
     font-size: 19px;
 
 }
@@ -720,12 +736,18 @@ text-align: center;
 }
 
 #contact {
-    background: #F9F9F9;
-    padding: 35px;
-    width: 100%;
-    margin: auto;
-    border-radius: 12px;
+ 
    
+}
+.contact-mg{
+        margin: auto auto -86px auto;
+        width: 60% !important;
+        background: #fbfffc;
+        padding: 44px;
+            position: relative;
+            border-radius: 12px;
+                box-shadow: 1px 0 5px 2px rgba(0, 0, 0, 0.15);
+
 }
 
 footer a{
@@ -764,7 +786,7 @@ fieldset {
 #contact input[type="url"],
 #contact textarea {
     width: 100%;
-    border: 1px solid rgb(5, 1, 1);
+    border: 1px solid #00ab41;
     background: rgb(255, 255, 255);
     margin: 0 0 5px;
     padding: 10px;
@@ -831,7 +853,7 @@ background: rgb(1, 115, 45);
     color: #888;
 }
 
-/* footer */
+/* grid-containers */
 
 footer{
 background: rgb(1, 115, 45);
@@ -874,7 +896,7 @@ footer p {
          .services>hr {
              text-align: center;
              font-size: 52px !important;
-             height: 52px;
+             height: 2px;
              opacity: 1;
              width: 20%;
              margin: auto;
@@ -972,7 +994,7 @@ padding-top: 72px !important;
   margin-bottom: 44px;
 }
 
-.col30 h3{
+.col20 h3{
     font-size: 19px;
     text-transform: capitalize;
     text-align: center;
@@ -983,7 +1005,7 @@ padding-top: 72px !important;
     box-shadow: 1px 2px 3px 2px #00ab4213;
 }
 
-.col30 h3:hover {
+.col20 h3:hover {
     color: #00ab41;
     box-shadow: 1px 2px 3px 3px rgba(0, 0, 0, 0.076);
 }
@@ -1023,3 +1045,6 @@ padding-top: 72px !important;
         transform: scale(1);
     }
 }
+
+/* back to top */
+
