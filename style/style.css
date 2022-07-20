@@ -16,14 +16,16 @@ a{
 /* col*/
 .col10{width: 10%;}
 .col20 {
-    width: 20%;
+    width: 25%;
 float: left;
 padding: 20px;
+margin: auto;
 }.col30 {
    
     width: 30%;
         padding: 20px;
         float: left;
+       
    
 }
 
@@ -433,11 +435,7 @@ img {
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: #00ab41;
-}
+
 a:hover {
     color:white !important;
 }

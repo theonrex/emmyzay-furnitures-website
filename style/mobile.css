@@ -1,4 +1,8 @@
 @media screen and (max-width: 1000px){
+    .green-bg p {
+            font-size: 13px;
+            text-align: center;
+        }
 
     .Emsocial-links {
             color: rgb(255, 255, 255);
@@ -264,7 +268,7 @@
                      left: 0;
                      position: absolute;
                      text-align: center;
-                     width: 40%;
+                     width: 50%;
                  }
 }
 
