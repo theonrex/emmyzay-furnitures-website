@@ -684,7 +684,7 @@ background: rgb(1, 115, 45);
 
 .first-section .col50 > h1{
     margin-top: 22px;
-    font-size: 52px;
+    font-size: 32px;
 color: rgb(188, 255, 207);
    
 }
@@ -969,7 +969,6 @@ footer p {
 
          /* forth-section */
         .forth-section{
-  background-color: #bcffcf5f;
   padding-bottom: 93px;
         }
        .forth-section header{
@@ -985,6 +984,28 @@ padding-top: 72px !important;
     text-align: center;
     font-size: 16px;
     margin: auto;
+}
+
+.carousel-item.active{
+    background-color: transparent !important;
+}
+
+.forth-section-slider{
+    width: 100%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+   opacity: 0.3 !important;
+}
+.carousel-item img{
+    border-radius: 12px;
+width: 50% !important;
+margin: auto !important;
+}
+.ml3 {
+    font-weight: 900;
+    font-size: 3.5em;
 }
 
 /* works */
@@ -1045,4 +1066,7 @@ padding-top: 72px !important;
 }
 
 /* back to top */
+
+
+
 

@@ -1,67 +1,106 @@
-let tl = gsap.timeline({
-    // yes, we can add it to an entire timeline!
-    scrollTrigger: {
-      trigger: ".myAmination",
-      pin: true,   // pin the trigger element while active
-      start: "top ", // when the top of the trigger hits the top of the viewport
-      end: "+=5", // end after scrolling 500px beyond the start
-      scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-      snap: {
-        snapTo: "labels", // snap to the closest label in the timeline
-        duration: {min: 0.2, max: 3}, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
-        delay: 0.2, // wait 0.2 seconds from the last scroll event before doing the snapping
-        ease: "power3.inOut" // the ease of the snap animation ("power3" by default)
-      }
-    }
-  });
 
-// add animations and labels to the timeline
-tl.addLabel("start")
+// var about = document.getElementById("about")
+//       var textWrapper = document.querySelector('.ml3');
+// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-  .to(".myAmination", {rotation: 360})
-  .addLabel("end");
 
-//   let xl = gsap.timeline({
-//     // yes, we can add it to an entire timeline!
-//     scrollTrigger: {
-//       trigger: ".AminationTwo ",
-//       pin: true,   // pin the trigger element while active
-//       start: "top top", // when the top of the trigger hits the top of the viewport
-//       end: "+=200", // end after scrolling 500px beyond the start
-//       scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-//       snap: {
-//         snapTo: "labels", // snap to the closest label in the timeline
-//         duration: {min: 0.2, max: 3}, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
-//         delay: 0.2, // wait 0.2 seconds from the last scroll event before doing the snapping
-//         ease: "power1.inOut" // the ease of the snap animation ("power3" by default)
-//       }
-//     }
-//   });
+// window.onscroll = function () {
 
-//   ScrollSmoother.create({
-//   smooth: 1,               // how long (in seconds) it takes to "catch up" to the native scroll position
-//   effects: true,           // looks for data-speed and data-lag attributes on elements
-//   smoothTouch: 0.1,        // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
-// });
+// 	if(window.scrollY >= about.offsetTop) {
 
-//     let xz = gsap.timeline({
-//     // yes, we can add it to an entire timeline!
-//     scrollTrigger: {
-//       trigger: ".AminationThree ",
-//       pin: true,   // pin the trigger element while active
-//       start: "top top", // when the top of the trigger hits the top of the viewport
-//       end: "+=200", // end after scrolling 500px beyond the start
-//       scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-//       snap: {
-//         snapTo: "labels", // snap to the closest label in the timeline
-//         duration: {min: 0.2, max: 3}, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
-//         delay: 0.2, // wait 0.2 seconds from the last scroll event before doing the snapping
-//         ease: "power1.inOut" // the ease of the snap animation ("power3" by default)
-//       }
-//     }
-//   });
+// 		startCounter();
 
+// function startCounter (){
+
+// anime.timeline({loop: false})
+//   .add({
+//     targets: '.ml3 .letter',
+//     opacity: [0,1],
+//     easing: "easeInOutQuad",
+//     duration: 750,
+//     delay: (el, i) => 150 * (i+1)
+//   }) 
+// }
+
+	// } }
+
+  //text animation
+      var textWrapper = document.querySelector('.trending');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+ anime.timeline({loop: false})
+  .add({
+    targets: '.trending .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 750,
+    delay: (el, i) => 150 * (i+1)
+  }) 
+  //text animation
+
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('works');
+
+  anime.timeline({
+    easing: 'easeOutExpo',
+  })
+  .add({
+    targets: '.Emsocial-links',
+       translateY:[750,  0],
+direction: 6000,
+ easing: 'easeInOutSine'
+  })
+
+  .add({
+    targets:'.site-logo img',
+      translateX: [10, 0],
+       easing: 'easeInOutSine',})
+
+    
+
+})
 
 
 
 
+
+//
+
+//
+
+
+var myAmination = document.getElementsByClassName(".myAmination");
+
+window.onscroll = function () {
+
+	if(window.scrollY >= myAmination.offsetTop) {
+
+		startCounter();
+
+function startCounter (){
+
+
+  anime.timeline({
+    easing: 'easeOutExpo',
+  })
+  .add({
+    targets: '.Emsocial-links',
+       translateY:[350,  0],
+direction: 'reverse',
+ easing: 'easeInOutSine'
+  })
+
+  .add({
+    targets:'.site-logo img',
+      translateX: [10, 0],
+      
+
+       easing: 'easeInOutSine',
+
+    
+  })
+}
+
+	} }
+
+//

@@ -1,4 +1,10 @@
 @media screen and (max-width: 1000px){
+
+    .carousel-item img {
+            border-radius: 12px;
+            width: 100% !important;
+            margin: auto !important;
+        }
     .green-bg p {
             font-size: 13px;
             text-align: center;
@@ -47,7 +53,6 @@
                                 }
                                 .forth-section {
     background-color: #bcffcf5f;
-    padding-bottom: 0;
 }
 
 .beautiful, .trending, .myAmination p{
@@ -129,7 +134,7 @@
 
     .forth-section {
         background-color: #bcffcf5f;
-        padding-bottom: 0;
+      
     }
 
     .beautiful,
